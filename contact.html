@@ -1,0 +1,168 @@
+<!Doctype html>
+<html>
+      <head>
+        <script>
+function check()
+{
+  var r=window.document.signmeup.registration_no.value;
+    var n=window.document.signmeup.name.value;
+    var email=window.document.signmeup.email.value;
+      var ma=window.document.signmeup.marks.value;
+      p=window.document.signmeup.password.value;
+      p1=window.document.signmeup.password1.value;
+
+    if(r=="")
+    {
+      alert("Please enter the username");
+      window.document.signmeup.registration_no.focus();
+    }
+
+    else  if(p=="")
+    {
+      alert("Please enter the pass word");
+      window.document.signmeup.password.focus();
+    }
+     
+    else if(email=="")
+    {
+      alert("Please enter the Email column");
+      window.document.signmeup.email.focus();
+    }
+     
+    else if(ma=="")
+    {
+      alert("Please enter the marks ");
+      window.document.signmeup.marks.focus();
+    }
+     
+      else if(p!=p1)
+    {
+    alert("Password Doesn't match");
+    document.signmeup.password.value="";
+    document.signmeup.password1.value="";
+        document.signmeup.password.focus();
+  }  
+  else if(n=="")
+    {
+      alert("Please enter the Name column");
+      window.document.signmeup.name.focus();
+    } 
+  else
+    document.signmeup.submit();
+
+}
+</script>
+ <!--scrip starts here-->
+  <script>
+   function previewFile(){
+       var preview = document.querySelector('img'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+  }
+
+  previewFile();  //calls the function named previewFile()
+  </script>
+  <!--scrip starts here-->
+      	    <meta charset="utf-8">
+      	    <meta name="viewport" content="width=device-width ,initial scale=1.0">
+      	    <title>Hostel Management System</title>
+      	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+      </head>
+
+ <body>
+ 
+
+ 	<!--from starts here-->
+ <!--	<div class="row">-->
+   <div class="col-md-4 col-md-offset-4">
+   	<form action="#" name="signupme">
+  <div class="form-group">
+    <label for="registration_no">College Registration No.</label>
+    <input type="number" class="form-control" id="registration_no" placeholder="College Registration No">
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+  <label for="gender">Select Gender</label>
+  <select class="form-control" id="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  <div class="form-group">
+  <label for="course">Select Course</label>
+  <select class="form-control" id="course">
+    <option value="B.Tech">B.Tech</option>
+    <option value="MCA">MCA</option>
+    <option value="M.Tech">M.Tech</option>
+  </select>
+  <!--Take Input from this select in jsp as request.getParameter("item"); -->
+</div>
+  <div class="form-group">
+  <label for="year">Select Year</label>
+  <select class="form-control" id="year">
+    <option value="First">First</option>
+    <option value="Second">Second</option>
+    <option value="Third">Third</option>
+    <option value="Final">Final</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="branch">Select Branch</label>
+  <select class="form-control" id="branch">
+    <option value="IT">Information Technology</option>
+    <option value="CS">Computer Science & Engineering</option>
+    <option value="CE">Civil Engineering</option>
+    <option value="EE">Electrical Engineering</option>
+    <option value="EL">Electronocs Engineering</option>
+    <option value="ME">Machanical Engineering</option>
+    <option value="MCA">Master Of Computer Application</option>
+  </select>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="marks">Last Year Marks</label>
+    <input type="number" class="form-control" id="marks" placeholder="Marks">
+  </div>
+  
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="password1">Re-Enter Password</label>
+    <input type="password" class="form-control" id="password1" placeholder="re-Password">
+  </div>
+  <div class="form-group" onchange="previewFile()">
+    <label for="photo">File input</label>
+    <input type="file" id="photo">
+    <p class="help-block">Please upload your photo having size between 20 to 50 Kb.</p>
+  </div>
+  
+
+ 
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="clear" class="btn btn-primary">Clear</button>
+</form>
+
+</div>
+ 	<!--from ends here--> 	
+ 	<script src="js/jquery.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
