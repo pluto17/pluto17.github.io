@@ -1,0 +1,85 @@
+header{
+  background: #D27957;
+}
+
+.nav_top{
+  background-color: #241E4E;
+
+
+}
+
+.nav_text{
+  color: white;
+}
+
+.nav_color{
+    background-color: ;
+}
+
+.photo{
+  width: 50%;
+  height: 500px;
+}
+
+.picture{
+  height: 100px;
+  width: 100px
+}
+
+.contact_form{
+  color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 20px;
+}
+
+.btn{
+  width: 100%;
+
+}
+.foot{
+  background: #bf143a;
+  text-align: center;
+}
+
+.foot_front{
+  text-align: center;
+  background-color: #0C0C18;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.foot_mid{
+  background-color: #4B3F72;
+  color: #fff;
+  text-align: center;
+}
+
+.foot_center{
+  background-color: #4B3F72;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.foot_bottom{
+  background-color: #1F2041;
+  color: #fff;
+  text-align: center;
+}
+
+.logo{
+  height: 30px;
+  width: 30px;
+}
+
+h3{
+  color: #CE6C47;
+}
+.iimage{
+  width: 242px;
+  height: 180px;
+}
