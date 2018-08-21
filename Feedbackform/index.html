@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navia Life Care</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="navia.css">
+  </head>
+  <body background="" >
+    <!-- Start of navigation bar -->
+    <nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navia-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+
+           <a class="navbar-brand" href="index.html">Navia Life Care</a>
+         </div>
+         <div class="collapse navbar-collapse navbar-right" id="bs-navia-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html"><span class="glyphicon glyphicon-home" style="color: #006666;"></span> Home</a></li>
+           <li><a href="about.html"><span class="glyphicon glyphicon-text-background" style="color: #006666;"></span> About</a></li>
+           <li><a href="#feedback" data-toggle="modal"><span class="glyphicon glyphicon-user" style="color: #006666;"></span> Feedback</a></li>
+           </ul>
+       </div>
+     </div>
+
+     </nav>
+    <!-- End of navigation bar -->
+    <p> <h1>For Feedback Form Click the feedback link in the navbar</h1> </p>
+    <!--Start of footer -->
+
+      <footer class="site-footer">
+        <hr style="border-color: #aaa;" width="60%">
+        <div class="container">
+          <div class="row">
+        <center> <h3>Join Us On</h3> </center>
+        <center>
+              <a href="www.facebook.com"> <img src="image/fb.png" width="60px" heigth="60px" ></a>
+              <a href="www.twitter.com"> <img src="image/twit.png" width="60px" heigth="60px" ></a>
+              <a href="www.linkedin.com"> <img src="image/link.png" width="60px" heigth="60px" ></a>
+            </center><br>
+            <center>
+             <b><h3>Contact Us.</h3></b>
+             Feel free to contact with us at our Helpline no. <b>987654321,0258-2345678</b><br>
+             For any Suggestions/Queries kindly mail us at <b>info@navialifecare.com</b>
+           </center><br><hr style="border-color: #aaa;" width="60%">
+          </div>
+        </div>
+      </footer>
+  <!-- End Of footer -->
+
+      <!--Start of Popupbox Feedback-->
+          <div class="modal fade" id="feedback" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <center><label for="feedback"><h3>Patient Feedback Form</h3></label></center>
+                  <p>Thank you for taking to fill in our online feedback form. By providing us your feedback, you are helping us understand what we do well and what improvements we need to implement.</p>
+
+                  <div class="modal-body">
+                    <div class="col-md-12 col-md-offset-0">
+                      <form action="#" name="signupme">
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <p>I came as a</p>
+                            </div>
+                            <div class="col-md-3">
+                              <p>Patient<input id="patient" type="radio" name="age" value=""></p>
+                            </div>
+                            <div class="col-md-3">
+                              <p>Relative<input id="relative" type="radio" name="age" value=""></p>
+                            </div>
+                            <div class="col-md-3">
+                              <p>Visitor<input id="visitor" type="radio" name="age" value=""></p>
+                            </div>
+                          </div>
+                        </div>
+                        <hr style="border-color: #00ccff;">
+                        <div class="form-group">
+                          <label for="registration_no">Patient Registration No.</label>
+                          <input type="digit" class="form-control" id="registration_no" placeholder="Patient Registration No">
+                        </div>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="gender">Select Gender</label>
+                          <select class="form-control" id="gender">
+                            <option value="select">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Transgender">Transgender</option>
+                          </select>
+                        </div>
+                          <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                          </div><hr style="border-color: #00ccff;">
+                        </div> <br>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p>1. My hospital stay at Navia Life Care was because of the following factor</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="1"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="1"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="1"></p>
+                            </div>
+                            <hr style="border-color: #00ccff;">
+                            <div class="col-md-6">
+                              <p>2. The Hospital environment is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="2"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="2"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="2"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>3. The Ward Facilities are</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="3"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="3"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="3"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>4. The Toilet(s) are</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="4"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="4"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="4"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>5. The Food/Diet is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="5"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="5"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="5"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>6. The service of attending Doctors is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="6"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="6"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="6"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>7. The service of attendant Nurse is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="7"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="7"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="7"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>8. The Hospitals Billing is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="8"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="8"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="8"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>9. The Reception/Enquiry service is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="9"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="9"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="9"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>10. The Admission Process is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="10"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="10"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="10"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>11. The Discharge Process is</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="11"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="11"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="11"></p>
+                            </div>
+                            <div class="col-md-6">
+                              <p>12. Overall I rate Navia Life Care as</p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Unpleasant<input id="Unpleasant" type="radio" name="12"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Satisfactory<input id="Satisfactory" type="radio" name="12"></p>
+                            </div>
+                            <div class="col-md-2">
+                              <p>Pleasant<input id="pleasant" type="radio" name="12"></p>
+                            </div>
+
+                          </div>
+                        </div>
+                        <hr style="border-color: #00ccff;">
+                        <div class="form-group">
+                          <h4>Any Other Feedback</h4>
+                          <textarea name="Mytext" rows="8" cols="50"></textarea>
+                        </div>
+                        <p> <h6>*The information given within the Feedback Form will be used for service improvement only and are strictly cofidential</h6> </p>
+                        <center>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="reset" class="btn btn-default">Reset</button>
+                      </center>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--End of Popupbox Feedback-->
+
+
+  </body>
+</html>
